@@ -1,0 +1,22 @@
+{
+    "manifest_version":3,
+    "name":"Reading time",
+    "version":"1.0",
+    "description":"Displaying the reading time for documents",
+
+    "icons":{
+        "16":"images/16_book_6732377.png",
+        "32":"images/32_book_6732377 (1).png",
+        "64":"images/64_book_6732377.png",
+        "128":"images/128_book_6732377 (2).png"
+    },
+    "content_scripts":[
+        {
+            "js":["scripts/content.js"],
+            "matches":[
+                "https://developer.chrome.com/docs/extensions/*",
+                "https://developer.chrome.com/docs/webstore/*"
+            ]
+        }
+    ]
+}
